@@ -107,7 +107,7 @@ article.portfolio {
 }
 .portfolio__hover {
   background-color: rgba(232, 69, 69, 0.7);
-  position:absolute;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
@@ -115,10 +115,12 @@ article.portfolio {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
-.team, .contact, .download {
+.team,
+.contact,
+.download {
   padding: 3rem 0;
 }
 
@@ -138,6 +140,20 @@ article.portfolio {
   border: 1px solid #e8ecee;
 }
 
+.testimonials {
+  background-color: #53354a;
+  position: relative;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.testimonials blockquote {
+  border: 0;
+  margin: 0;
+  padding: 100px 15% 0;
+}
 
 .contact {
   background: #3a3e64;
@@ -168,4 +184,3 @@ article.portfolio {
     width: 25%;
   }
 }
-
