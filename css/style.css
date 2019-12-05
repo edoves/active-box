@@ -1,0 +1,171 @@
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --testimony-font: "Cardo", serif;
+
+  --primary-color: #e84545;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  font-family: var(--secondary-font);
+}
+
+.header {
+  background-image: linear-gradient(
+      0deg,
+      rgba(42, 46, 72, 0.86),
+      rgba(42, 46, 72, 0.86)
+    ),
+    url(../img/hero.jpg);
+  /* background-color: #2a2e48; */
+  /* background-image: url(../img/hero.jpg); */
+  background-size: cover;
+  min-height: 80vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  font-family: var(--primary-font);
+  padding: 7rem 0;
+}
+
+.nd-cursive {
+  font-family: var(--secondary-font);
+}
+
+.title {
+  padding-top: 0;
+}
+.brand h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.nav-border {
+  border-bottom: 1px solid #fff;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+.service {
+  font-size: 1rem;
+  padding: 5rem 0;
+}
+
+.service__item h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.nd-icon {
+  color: var(--primary-color);
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+i.now-ui-icons.arrows-1_share-66.nd-icon {
+  transform: rotate(180deg);
+}
+
+/* .portfolios {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.portfolio a {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+.portfolio figure {
+  margin: 0;
+}
+
+article.portfolio {
+  width: 50%;
+}
+
+.portfolio__hover-content h4 {
+  line-height: 0;
+}
+
+.portfolio__hover:hover {
+  opacity: 1;
+}
+.portfolio__hover {
+  background-color: rgba(232, 69, 69, 0.7);
+  position:absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all ease .5s;
+}
+
+.team, .contact, .download {
+  padding: 3rem 0;
+}
+
+.team__item h3 {
+  margin: 0;
+  line-height: 1.4;
+}
+.team__item h3 span {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  display: block;
+}
+
+.team__social i.fab {
+  padding: 1.6rem;
+  color: #c6cacc;
+  border: 1px solid #e8ecee;
+}
+
+
+.contact {
+  background: #3a3e64;
+  color: #fff;
+}
+.contact p {
+  color: #afb0bc;
+}
+
+.contact__social i.fab {
+  padding: 1rem;
+  color: #c6cacc;
+  border: 1px solid #e8ecee;
+}
+
+.footer {
+  background: #313454;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.footer__content p {
+  line-height: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  article.portfolio {
+    width: 25%;
+  }
+}
+
